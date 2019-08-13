@@ -1,11 +1,22 @@
 Package: databinders
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Data Reading, Binding and Writing
+Date: 2019-08-13
 Version: 0.1.0
-Author: Who wrote it
+Authors@R: 
+    person(given = "Ahmad",
+           family = "Alkadri",
+           role = c("aut", "cre"),
+           email = "ahmad.alkadri@outlook.com")
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Imports: rio
+Suggests: datasets, bit64, testthat, knitr, magrittr, clipr, csvy,
+    feather, fst, hexView, jsonlite, readODS (>= 1.6.4), readr,
+    rmatio, xml2 (>= 1.2.0), yaml
+Depends: R (>= 3.0.0)
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
