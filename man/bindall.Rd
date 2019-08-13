@@ -22,5 +22,11 @@ particular repository and writing them into a new dataframe.
 Current supported input format: CSV, XLSX, and ODS
 }
 \examples{
+
+download.file(url = "https://github.com/ahmad-alkadri/databinders/raw/master/Examples.zip",
+              destfile = "Examples.zip")
+
+unzip(zipfile = "Examples.zip")
+
 df <- bindall(repo = "Examples/XLSX/", type = "xlsx")
 }
