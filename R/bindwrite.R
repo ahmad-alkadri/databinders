@@ -40,10 +40,9 @@ bindwrite <- function(repo = getwd(), type = "xlsx", output = "databound.xlsx"){
     # if the merged dataset doesn't exist, create it
     if (!exists("dataset")){
       dataset <- rio::import(file)
-    }
+    } else {
 
-    # if the merged dataset does exist, append to it
-    if (exists("dataset")){
+      # if the merged dataset does exist, append to it
       tmp_dataset <-rio::import(file)
       dataset<-rbind(dataset, tmp_dataset)
       rm(tmp_dataset)
