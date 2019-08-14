@@ -1,6 +1,9 @@
 Databinders
 ================
 
+[![Build
+Status](https://travis-ci.org/ahmad-alkadri/databinders.svg?branch=master)](https://travis-ci.org/ahmad-alkadri/databinders)
+
 ## Description
 
 The aim of databinders is to solve a common problem of mine: the need
